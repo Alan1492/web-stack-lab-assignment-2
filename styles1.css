@@ -1,0 +1,68 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image:url('') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer{
+    background-color: rgb(20, 14, 14);
+    text-align: center;
+    padding: 5px;
+    bottom: 0%;
+    width: 100%;;
+}
+.form-label{
+    color:#1a5da0;
+}
+.hero {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+    text-align: center;
+}
+.container{
+    font-weight:500;
+    max-width:fit-content
+    
+
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0;
+    
+  
+    
+} 
+
+.gallery-item {
+    background-color: #ddd;
+    padding: 1rem;
+    
+    
+    
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        padding: 1rem 0;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;   
+}
+
+/* CSS Pseudo-classes */
+nav ul li a:hover {
+    background-color: #ddd;
+}
+
+form input:focus {
+    border-color: #007bff;
+}
+
+.gallery-item:nth-child(even) {
+    background-color: #bbb;
+}
+}

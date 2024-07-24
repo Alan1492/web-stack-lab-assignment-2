@@ -1,0 +1,63 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 1rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.gallery .item {
+    flex: 1 1 calc(33.333% - 1rem);
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Add a background color for better visualization */
+}
+
+.gallery .item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 200px; /* Set a maximum height for the images */
+    object-fit: cover; /* Ensure images cover the container while maintaining aspect ratio */
+}
+
+@media (max-width: 768px) {
+    .gallery .item {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery .item {
+        flex: 1 1 100%;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
